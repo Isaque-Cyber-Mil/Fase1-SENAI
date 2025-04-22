@@ -7,13 +7,38 @@
 </head>
 <style>
     body {
-        background-color: darkblue;
-        background-image: url("");
+        background-color: #586e6c;
+        font-family: Arial, sans-serif;
+    } 
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        width: 100%;
+    }
+        .button-conteiner{
+        display: flex;
+        gap: 20px; /* Espaçamento horizontal entre os botões */
+    }
+  
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 400px;
+        margin: 0;
+        background-color: #ffffff;
     }
 </style>
 <body>
-    <button onclick="somar()"> <h1>Somar plus</h1></button>
+    <div class="button-container">
+     <button onclick="somar()"><h1>Somar plus</h1></button>
+    
     <button onclick="diminui()"> <h1>Diminuir less</h1></button>
         <script src="exercícios.js"></script>
+    </div>
 </body>
 </html>
